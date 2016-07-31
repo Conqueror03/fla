@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% import "_macros.html" as macros %}
+<head>
+<style type="text/css">
+p.margin {margin: 2cm 2cm 3cm 2cm}
+</style>
+</head>
+{% block title %}Flasky{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>关于网站和我的一些信息</h1>
+</div>
+ </br>
+ 
+ <img src="{{ url_for('static', filename = 'e.jpg') }}" class="margin"align="left" width="300" height="500">
+ </br>
+ </br>
+  </br>
+
+ <h3 ><span class="highlight">关于网站</h3></span>
+
+  <p  class="n">这个网站是一个社交博客网站，取名为"世界，你好！（Hello，world !）",是因为这是我的第一个网站。本网站具有注册，发表短文，添加评论，关注他人，修改密码邮箱等等通常社交微博网站都具有的功能。 </p>
+
+<p class="n">
+  本网站采用python的flask网络框架作为后端，以html+css+bootstrap作为前端。重点在后端，前端方面我只有粗浅的了解，所以前端页面我做的有些简陋，应该还有改进的空间。
+  </p>
+<hr>
+<h3> <span class="highlight">关于我</h3></span>
+ <p class="n">
+  徐文力，西北工业大学自动化专业在读，热爱编程。
+  </p>
+  
+<hr>
+  <h3><span class="highlight">联系方式</h3></span>
+  <p class="n">
+  QQ： 491903644</p>
+  <p class="n">
+  邮箱：xuwenli@mail.nwpu.edu.cn
+</p>
+<hr>
+{% endblock %}
+
+

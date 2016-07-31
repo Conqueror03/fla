@@ -1,0 +1,7 @@
+<p>{{ user.username }},你好！</p>
+<p>为了确认你的邮箱 <a href="{{ url_for('auth.change_email', token=token, _external=True) }}">点击这里</a>.</p>
+<p>你也可以复制以下链接到你的浏览器地址栏里，然后打开</p>
+<p>{{ url_for('auth.change_email', token=token, _external=True) }}</p>
+<p>祝您在此站收获愉快！</p>
+<p>管理员：xuwenli 敬上</p>
+<p><small>注意：不要回复此邮件</small></p>
